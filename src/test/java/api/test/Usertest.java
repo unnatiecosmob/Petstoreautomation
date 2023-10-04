@@ -55,7 +55,7 @@ public class Usertest {
 		Response response = Userendpoints.createuser(userpayload);
 		response.then().log().all();
 		
-		AssertJUnit.assertEquals(response.getStatusCode(), 200);
+		Assert.assertEquals(response.getStatusCode(), 200);
 		
 		logger.info("*************** User created **************");
 	}
